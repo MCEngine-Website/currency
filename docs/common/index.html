@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCEngineCurrencyCommon Usage</title>
+  <link rel="stylesheet" href="../style/content/style.css" />
+</head>
+<body>
+  <h1>MCEngineCurrencyCommon - API Usage Guide</h1>
+
+  <div class="api-box">
+    <h2>getApi()</h2>
+    <div class="comment">/** Gets the global API singleton instance */</div>
+    <h3>Function</h3>
+    <pre>public static MCEngineCurrencyCommon getApi()</pre>
+    <h3>Usage</h3>
+    <pre>MCEngineCurrencyCommon common = MCEngineCurrencyCommon.getApi();</pre>
+    <h3 class="summary">Provides access to the singleton API instance.</h3>
+  </div>
+
+  <div class="api-box">
+    <h2>initPlayerData(UUID uuid)</h2>
+    <div class="comment">/** Initializes player data with default currency */</div>
+    <h3>Function</h3>
+    <pre>public void initPlayerData(UUID uuid)</pre>
+    <h3>Usage</h3>
+    <pre>common.initPlayerData(playerId);</pre>
+    <h3 class="summary">Sets all player coin balances to 0.0 if not already initialized.</h3>
+  </div>
+
+  <div class="api-box">
+    <h2>checkIfPlayerExists(UUID uuid)</h2>
+    <div class="comment">/** Checks whether player data exists in the database */</div>
+    <h3>Function</h3>
+    <pre>public boolean checkIfPlayerExists(UUID uuid)</pre>
+    <h3>Usage</h3>
+    <pre>boolean exists = common.checkIfPlayerExists(playerId);</pre>
+    <h3 class="summary">Returns true if player currency data is stored in the DB.</h3>
+  </div>
+
+  <div class="api-box">
+    <h2>addCoin(UUID uuid, String coinType, double amt)</h2>
+    <div class="comment">/** Adds coins to a player's balance */</div>
+    <h3>Function</h3>
+    <pre>public void addCoin(UUID uuid, String coinType, double amt)</pre>
+    <h3>Usage</h3>
+    <pre>common.addCoin(playerId, "gold", 50.0);</pre>
+    <h3 class="summary">Increases the player’s balance for the given coin type.</h3>
+  </div>
+
+  <div class="api-box">
+    <h2>minusCoin(UUID uuid, String coinType, double amt)</h2>
+    <div class="comment">/** Subtracts coins from a player's balance */</div>
+    <h3>Function</h3>
+    <pre>public void minusCoin(UUID uuid, String coinType, double amt)</pre>
+    <h3>Usage</h3>
+    <pre>common.minusCoin(playerId, "silver", 25.0);</pre>
+    <h3 class="summary">Decreases the player’s balance for the specified coin.</h3>
+  </div>
+
+  <div class="api-box">
+    <h2>getCoin(UUID uuid, String coinType)</h2>
+    <div class="comment">/** Retrieves the current coin balance for a player */</div>
+    <h3>Function</h3>
+    <pre>public double getCoin(UUID uuid, String coinType)</pre>
+    <h3>Usage</h3>
+    <pre>double coins = common.getCoin(playerId, "copper");</pre>
+    <h3 class="summary">Returns the balance of the requested coin type for a player.</h3>
+  </div>
+
+  <div class="api-box">
+    <h2>createTransaction(...)</h2>
+    <div class="comment">/** Records a currency transaction between two players */</div>
+    <h3>Function</h3>
+    <pre>public void createTransaction(UUID sender, UUID receiver, String currencyType, String transactionType, double amount, String notes)</pre>
+    <h3>Usage</h3>
+    <pre>common.createTransaction(senderId, receiverId, "gold", "pay", 10.0, "Payment for item");</pre>
+    <h3 class="summary">Logs a transaction with type, currency, amount, and optional notes.</h3>
+  </div>
+
+  <div class="api-box">
+    <h2>getDBConnection()</h2>
+    <div class="comment">/** Returns the active SQL connection instance */</div>
+    <h3>Function</h3>
+    <pre>public Connection getDBConnection()</pre>
+    <h3>Usage</h3>
+    <pre>Connection conn = common.getDBConnection();</pre>
+    <h3 class="summary">Useful for manual queries or diagnostics on the active database.</h3>
+  </div>
+
+  <div class="api-box">
+    <h2>disConnect()</h2>
+    <div class="comment">/** Closes the active database connection */</div>
+    <h3>Function</h3>
+    <pre>public void disConnect()</pre>
+    <h3>Usage</h3>
+    <pre>common.disConnect();</pre>
+    <h3 class="summary">Should be called during plugin disable or shutdown.</h3>
+  </div>
+</body>
+</html>
