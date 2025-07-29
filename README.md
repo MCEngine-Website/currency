@@ -1,3 +1,3 @@
 # ℹ️ Information
 
-This repository was created for [**`Currency`**](https://mcengine.github.io/currency-website) 🤖.
+This repository was created for [**`Currency`**](https://mcengine-website.github.io/currency) 🤖.
