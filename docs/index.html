@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCEngine Currency</title>
-    <link rel="stylesheet" href="style/dashboard/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MCEngine Currency</title>
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="https://mcengine-website.github.io/templates/v1/css/dashboard/style.css" />
+  <link rel="stylesheet" href="https://mcengine-website.github.io/templates/v1/css/partials/sidebar.css" />
+
+  <!-- Markdown Parser + Content Loader -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://mcengine-website.github.io/templates/v1/scripts/markdown-loader.js"></script>
 </head>
 <body>
-    <main class="center-container">
-        <div class="api-box">
-            <h1>MCEngine Currency</h1>
-            <div>
-                This project is created for a currency system with four types of currency:
-                <b>coin</b>, <b>copper</b>, <b>silver</b>, and <b>gold</b>.
-            </div>
-            <div style="margin-top: 22px;">
-                Also provides: <a href="common">Common</a>
-            </div>
+  <div class="dashboard-wrapper">
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar box" id="sidebar"></aside>
+
+      <!-- Main content box -->
+      <main class="main-content">
+        <div class="content-header">
+          <h1>Home</h1>
         </div>
-    </main>
+        <div class="content-body" id="markdown-container">
+          <!-- Markdown content loaded here -->
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    fetch('partials/sidebar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('sidebar').innerHTML = html;
+      });
+
+    // Load markdown content about currency system
+    loadMarkdownFiles('contents/home/', 'markdown-container', [
+      'overview.md'
+    ]);
+  </script>
 </body>
 </html>

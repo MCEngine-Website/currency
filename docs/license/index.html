@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MCEngineCurrencyCommon Usage</title>
+  <title>MCEngine Currency</title>
 
   <!-- Shared styles -->
   <link rel="stylesheet" href="https://mcengine-website.github.io/templates/v1/css/dashboard/style.css" />
@@ -19,37 +19,28 @@
       <!-- Sidebar -->
       <aside class="sidebar box" id="sidebar"></aside>
 
-      <!-- Main content -->
+      <!-- Main content box -->
       <main class="main-content">
         <div class="content-header">
-          <h1>MCEngineCurrencyCommon - API Usage Guide</h1>
+          <h1>Home</h1>
         </div>
         <div class="content-body" id="markdown-container">
-          <!-- Markdown API sections will load here -->
+          <!-- Markdown content loaded here -->
         </div>
       </main>
     </div>
   </div>
 
   <script>
-    // Load sidebar
     fetch('../partials/sidebar.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('sidebar').innerHTML = html;
       });
 
-    // Load markdown files
-    loadMarkdownFiles('../contents/common/', 'markdown-container', [
-      'get-api.md',
-      'init-player-data.md',
-      'check-if-player-exists.md',
-      'add-coin.md',
-      'minus-coin.md',
-      'get-coin.md',
-      'create-transaction.md',
-      'get-db-connection.md',
-      'disconnect.md'
+    // Load markdown content about currency system
+    loadMarkdownFiles('../contents/license/', 'markdown-container', [
+      'LICENSE.md'
     ]);
   </script>
 </body>
