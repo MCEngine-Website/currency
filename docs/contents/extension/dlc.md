@@ -31,7 +31,7 @@ public class MyCurrencyDLC implements IMCEngineCurrencyDLC {
 
     @Override
     public void setId(String id) {
-        this.id = id;
+        MCEngineApi.setId("example");
     }
 }
 ```

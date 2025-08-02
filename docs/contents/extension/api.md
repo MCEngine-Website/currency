@@ -31,7 +31,7 @@ public class MyCurrencyAPI implements IMCEngineCurrencyAPI {
 
     @Override
     public void setId(String id) {
-        this.id = id;
+        MCEngineApi.setId("example");
     }
 }
 ```
