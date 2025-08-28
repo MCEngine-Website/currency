@@ -1,7 +1,7 @@
 # Configuration
 
 Configuration files are located at:  
-`plugins/MCEngineEconomy/extensions/addons/configs/MCEngineMarket`
+`plugins/MCEngineEconomy/extensions/addons/configs/MCEngineMarket/list`
 
 You can configure items by:
 
