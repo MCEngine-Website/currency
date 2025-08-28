@@ -1,12 +1,12 @@
 # Configuration
 
 Configuration files are located at:  
-`plugins/MCEngineCurrency/configs/addons/MCEngineMarket`
+`plugins/MCEngineEconomy/extensions/addons/configs/MCEngineMarket`
 
 You can configure items by:
 
 - Position  
 - Name  
-- Lore
+- Lore  
 
 These configurations apply to both buying and selling.
