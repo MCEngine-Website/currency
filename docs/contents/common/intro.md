@@ -1,6 +1,6 @@
-# 💲 Currency Common
+# 💲 Economy Common
 
-Common utilities and shared components for the Currency API module.  
+Common utilities and shared components for the Economy API module.  
 Available through GitHub Packages for easy dependency management.
 
 ---
@@ -12,7 +12,7 @@ Available through GitHub Packages for easy dependency management.
 ```xml
 <dependency>
   <groupId>io.github.mcengine</groupId>
-  <artifactId>currency-common</artifactId>
+  <artifactId>economy-common</artifactId>
   <version>{version}</version>
 </dependency>
 ```
@@ -23,13 +23,13 @@ Available through GitHub Packages for easy dependency management.
 
 **Short form**:
 ```groovy
-implementation 'io.github.mcengine:currency-common:{version}'
+implementation 'io.github.mcengine:economy-common:{version}'
 ```
 
 **Long form**:
 ```groovy
 dependencies {
-    implementation group: 'io.github.mcengine', name: 'currency-common', version: '{version}'
+    implementation group: 'io.github.mcengine', name: 'economy-common', version: '{version}'
 }
 ```
 
@@ -37,13 +37,13 @@ dependencies {
 
 **Short form**:
 ```kotlin
-implementation("io.github.mcengine:currency-common:{version}")
+implementation("io.github.mcengine:economy-common:{version}")
 ```
 
 **Long form**:
 ```kotlin
 dependencies {
-    implementation(group = "io.github.mcengine", name = "currency-common", version = "{version}")
+    implementation(group = "io.github.mcengine", name = "economy-common", version = "{version}")
 }
 ```
 
@@ -58,7 +58,7 @@ dependencies {
 <repositories>
   <repository>
     <id>github</id>
-    <url>https://maven.pkg.github.com/MCEngine-Common/currency</url>
+    <url>https://maven.pkg.github.com/MCEngine-Common/economy</url>
   </repository>
 </repositories>
 ```
@@ -70,7 +70,7 @@ dependencies {
 ```groovy
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/MCEngine-Common/currency")
+        url = uri("https://maven.pkg.github.com/MCEngine-Common/economy")
     }
 }
 ```
@@ -82,7 +82,7 @@ repositories {
 ```kotlin
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/MCEngine-Common/currency")
+        url = uri("https://maven.pkg.github.com/MCEngine-Common/economy")
     }
 }
 ```

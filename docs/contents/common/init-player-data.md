@@ -1,7 +1,7 @@
 ## `initPlayerData(UUID uuid)`
 
 > **Description:**  
-Initializes player data with default currency.
+Initializes player data with default economy.
 
 ### Function
 ```java

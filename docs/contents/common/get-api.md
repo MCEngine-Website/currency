@@ -5,12 +5,12 @@ Gets the global API singleton instance.
 
 ### Function
 ```java
-public static MCEngineCurrencyCommon getApi()
+public static MCEngineEconomyCommon getApi()
 ```
 
 ### Usage
 ```java
-MCEngineCurrencyCommon common = MCEngineCurrencyCommon.getApi();
+MCEngineEconomyCommon common = MCEngineEconomyCommon.getApi();
 ```
 
 ### Summary

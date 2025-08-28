@@ -14,4 +14,4 @@ boolean exists = common.checkIfPlayerExists(playerId);
 ```
 
 ### Summary
-Returns `true` if player currency data is stored in the DB.
+Returns `true` if player economy data is stored in the DB.

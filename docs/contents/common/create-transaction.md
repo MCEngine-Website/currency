@@ -1,7 +1,7 @@
 ## `createTransaction(...)`
 
 > **Description:**  
-Records a currency transaction between two players.
+Records a economy transaction between two players.
 
 ### Function
 ```java
@@ -21,4 +21,4 @@ common.createTransaction(senderId, receiverId, "gold", "pay", 10.0, "Payment for
 ```
 
 ### Summary
-Logs a transaction with type, currency, amount, and optional notes.
+Logs a transaction with type, economy, amount, and optional notes.

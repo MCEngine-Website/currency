@@ -1,6 +1,6 @@
-# 💱 Currency API
+# 💱 Economy API
 
-An extensible API for handling currency exchange, conversion, and formatting in Java.  
+An extensible API for handling economy balances, transactions, and formatting in Java.  
 Available on GitHub Packages for seamless integration.
 
 ---
@@ -12,7 +12,7 @@ Available on GitHub Packages for seamless integration.
 ```xml
 <dependency>
   <groupId>io.github.mcengine</groupId>
-  <artifactId>currency-api</artifactId>
+  <artifactId>economy-api</artifactId>
   <version>{version}</version>
 </dependency>
 ```
@@ -23,13 +23,13 @@ Available on GitHub Packages for seamless integration.
 
 **Short form**:
 ```groovy
-implementation 'io.github.mcengine:currency-api:{version}'
+implementation 'io.github.mcengine:economy-api:{version}'
 ```
 
 **Long form**:
 ```groovy
 dependencies {
-    implementation group: 'io.github.mcengine', name: 'currency-api', version: '{version}'
+    implementation group: 'io.github.mcengine', name: 'economy-api', version: '{version}'
 }
 ```
 
@@ -37,13 +37,13 @@ dependencies {
 
 **Short form**:
 ```kotlin
-implementation("io.github.mcengine:currency-api:{version}")
+implementation("io.github.mcengine:economy-api:{version}")
 ```
 
 **Long form**:
 ```kotlin
 dependencies {
-    implementation(group = "io.github.mcengine", name = "currency-api", version = "{version}")
+    implementation(group = "io.github.mcengine", name = "economy-api", version = "{version}")
 }
 ```
 
@@ -58,7 +58,7 @@ dependencies {
 <repositories>
   <repository>
     <id>github</id>
-    <url>https://maven.pkg.github.com/MCEngine-API/currency</url>
+    <url>https://maven.pkg.github.com/MCEngine-API/economy</url>
   </repository>
 </repositories>
 ```
@@ -70,7 +70,7 @@ dependencies {
 ```groovy
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/MCEngine-API/currency")
+        url = uri("https://maven.pkg.github.com/MCEngine-API/economy")
     }
 }
 ```
@@ -82,7 +82,7 @@ repositories {
 ```kotlin
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/MCEngine-API/currency")
+        url = uri("https://maven.pkg.github.com/MCEngine-API/economy")
     }
 }
 ```
