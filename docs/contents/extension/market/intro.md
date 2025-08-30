@@ -1,5 +1,8 @@
 # 🛒 Market AddOn (Economy)
 
+[`Repository`](https://github.com/MCEngine-Extension/economy-addon-market)
+[`GitHub Release`](https://github.com/MCEngine-Extension/economy-addon-market/releases)
+
 This plugin is an AddOn for **MCEngineEconomy**.  
 It provides a configurable shop and market system (buy/sell) that plugs into your server’s economy.
 
