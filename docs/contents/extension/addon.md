@@ -1,6 +1,7 @@
 # Currency AddOn Usage Guide
 
 **Path:** `com.example.MyCurrencyAddOn.java`
+[`Example Repository`](https://github.com/MCEngine-Extension/economy-addon-example)
 
 This document explains how to implement the `IMCEngineCurrencyAddOn` interface to create a custom currency-based AddOn for the MCEngine.
 

@@ -1,6 +1,7 @@
 # Currency API Module Usage Guide
 
 **Path:** `com.example.MyCurrencyAPI.java`
+[`Example Repository`](https://github.com/MCEngine-Extension/economy-api-example)
 
 This document explains how to implement the `IMCEngineCurrencyAPI` interface to create a central currency API module for the MCEngine.
 

@@ -1,6 +1,7 @@
 # Currency Library Module Usage Guide
 
 **Path:** `com.example.MyCurrencyLibrary.java`
+[`Example Repository`](https://github.com/MCEngine-Extension/economy-library-example)
 
 This document explains how to implement the `IMCEngineCurrencyLibrary` interface to build a supporting library for currency features.
 

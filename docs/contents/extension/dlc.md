@@ -1,6 +1,7 @@
 # Currency DLC Module Usage Guide
 
 **Path:** `com.example.MyCurrencyDLC.java`
+[`Example Repository`](https://github.com/MCEngine-Extension/economy-dlc-example)
 
 This document explains how to implement the `IMCEngineCurrencyDLC` interface to create a currency-based DLC for the MCEngine.
 
